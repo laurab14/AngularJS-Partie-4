@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+  <title>Exercice 6</title>
+  <script src="script6.js"></script>
+</head>
+
+<body>
+<div ng-app="myApp" ng-controller="showController">
+    <button  name="button" ng-click="Show()">Paragraphe 1</button>
+      <button  name="button" ng-click="Hide()">Paragraphe 2</button>
+      <p ng-show="IsVisibleA" >Paragraphe n°1 : Faire une page HTML contenant un bouton Afficher et un bouton Cacher. Au clic sur l'un ou sur l'autre afficher ou non un paragraphe de votre choix.</p>
+      <p ng-show="IsVisibleB" >paragraphe n°2 : Faire une page HTML contenant deux paragrahes et deux boutons. Au clic sur le premier uniquement le paragrahe 1 doit être visible. Au clic sur le bouton deux, seulement le paragrahe 2 doit aparaître.</p>
+</div>
+<!--aussi possible et plus pratique -->
+<!-- <div ng-app="myApp" ng-controller="showController">
+    <button  name="button" ng-click="IsVisibleA=true;IsVisibleB=false">Paragraphe 1</button>
+      <button  name="button" ng-click="IsVisibleA=false;IsVisibleB=true">Paragraphe 2</button>
+      <p ng-show="IsVisibleA" >Paragraphe n°1 : Faire une page HTML contenant un bouton Afficher et un bouton Cacher. Au clic sur l'un ou sur l'autre afficher ou non un paragraphe de votre choix.</p>
+      <p ng-show="IsVisibleB" >paragraphe n°2 : Faire une page HTML contenant deux paragrahes et deux boutons. Au clic sur le premier uniquement le paragrahe 1 doit être visible. Au clic sur le bouton deux, seulement le paragrahe 2 doit aparaître.</p>
+</div> -->
+</body>
+
+</html>

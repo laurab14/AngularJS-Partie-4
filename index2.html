@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" ng-app="testCars">
+  <head>
+    <meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script><script src="script2.js"></script>
+    <title>Exercice 2</title>
+  </head>
+  <body>
+<div ng-controller="modeleCtrl">
+  <table cellspacing="2px" cellpadding="2px;" rules="all" style="border:solid 1px black;">
+    <thead>
+      <th>Marques</th>
+      <th>Couleurs</th>
+    </thead>
+    <tr ng-repeat="car in modele">
+      <td>
+        {{car.marque}}
+      </td>
+      <td>
+        {{car.couleur}}
+      </td>
+    </tr>
+  </table>
+</div>
+  </body>
+</html>

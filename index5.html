@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+  <script src="script5.js"></script>
+  <title>Exercice 5</title>
+</head>
+
+<body>
+<div ng-app="myApp" ng-controller="showController">
+    <button  name="button" ng-click="Show()">Show</button>
+      <button  name="button" ng-click="Hide()">Hide</button>
+      <p ng-show="!IsVisible" ng-hide="IsVisible">Faire une page HTML contenant un bouton Afficher et un bouton Cacher. Au clic sur l'un ou sur l'autre afficher ou non un paragraphe de votre choix.</p>
+</div>
+
+
+<!--aussi possible et plus simple : -->
+<!-- <div ng-app="myApp" ng-controller="showController">
+    <button  name="button" ng-click="IsVisible=true">Show</button>
+      <button  name="button" ng-click="IsVisible=false">Hide</button>
+      <p ng-show="IsVisible" ng-hide="IsVisible">Faire une page HTML contenant un bouton Afficher et un bouton Cacher. Au clic sur l'un ou sur l'autre afficher ou non un paragraphe de votre choix.</p>
+</div> -->
+</body>
+
+</html>
